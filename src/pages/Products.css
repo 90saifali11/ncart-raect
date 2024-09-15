@@ -1,0 +1,130 @@
+/* Center the container and provide padding */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the loading and error messages */
+.loading, .error {
+  text-align: center;
+  font-size: 2rem;
+  color: #FFD900; /* Use yellow for emphasis */
+  margin-top: 50px;
+}
+
+/* Style for the search bar */
+.search-bar {
+  margin-top: 100px; /* Adjusted margin-top */
+  display: flex;
+  justify-content: center; /* Center the search bar */
+  margin-bottom: 20px; /* Space below the search bar */
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #FFD900; /* Highlight border color on focus */
+  outline: none;
+}
+
+/* Style for sorting buttons */
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.sort-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFD900;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sort-button.active {
+  background-color: #FFC107; /* Active button color */
+}
+
+.sort-button:hover {
+  background-color: #FFC107;
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Style for category chips */
+.category-chips {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.category-chip {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #FFD900;
+  border-radius: 20px;
+  background-color: #000;
+  color: #FFD900;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-chip.selected {
+  background-color: #FFD900;
+  color: #000;
+}
+
+/* Style for product cards */
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between cards */
+}
+
+.product-card {
+  flex: 1 1 calc(33.333% - 20px); /* Ensure three cards per row with gaps */
+  max-width: calc(33.333% - 20px); /* Fixed width for each card with spacing */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* Space below each card */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Slightly lift the card on hover */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%; /* Make image fill the card width */
+  height: 300px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area */
+  border-bottom: 1px solid #ddd; /* Border below the image */
+}
+
+/* Style for no products message */
+.no-products {
+  text-align: center;
+  font-size: 20px;
+  color: #888;
+  margin-top: 20px;
+}

@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Black background */
+  color: #FFD900; /* Yellow text */
+}
+
+/* Cart Container */
+.cart-container {
+position: relative;
+left: 300px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 40px auto; /* Center the container horizontally and add top/bottom margin */
+  color: #FFD900;
+  background-color: #222; /* Darker shade for contrast */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.cart-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #FFD900;
+}
+
+/* Summary Container */
+.summary-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  gap: 10px; /* Add gap between summary boxes */
+}
+
+.summary-box {
+  flex: 1;
+  text-align: center;
+  background-color: #1a1a1a; /* Darker black shade */
+  padding: 20px;
+  border-radius: 8px;
+  color: #FFD900;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.summary-box h1 {
+  font-size: 1.5rem;
+  color: #FFD900;
+}
+
+/* Checkout Box */
+.checkout-box {
+  text-align: center;
+  background-color: #FFD900; /* Yellow */
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-box:hover {
+  background-color: #FFA500; /* Darker yellow on hover */
+}
+
+.checkout-box button {
+  background-color: #FFD900;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-box button:hover {
+  background-color: #e5c200; /* Darker yellow on hover */
+}
+
+/* Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #FFD900;
+  margin-bottom: 15px;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 8px;
+  border: 2px solid #FFD900;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #FFD900;
+}
+
+.product-details h2 {
+  font-size: 1.2rem;
+  color: #FFD900;
+}
+
+/* Remove Button */
+.remove-button {
+  position: absolute;
+  background-color: #FFD900;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; /* Adjust top margin */
+}
+
+.remove-button:hover {
+  background-color: #e5c200; /* Darker yellow on hover */
+}
+
+/* Empty Cart Message */
+.empty-cart-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #FFD900;
+}
+
+/* Button spacing */
+button {
+  margin: 0 10px; /* Add spacing between buttons */
+}
